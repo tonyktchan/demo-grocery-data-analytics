@@ -10,9 +10,6 @@ import hashlib
 #
 
 def order_gen(customer_list, product_list, quantity, products, no_order, no_day)-> "order_dataset":
-'''
- generate customer orders
-'''
     order_dataset = []
     unique_order_list = []
 
