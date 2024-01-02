@@ -70,7 +70,7 @@ class Compare2CSV(unittest.TestCase):
 
         row_no = df.shape[0]
 
-        self.assertTrue(min_no <= row_no <= max_no, "order_by_customer.csv does not have acceptacle nunber of rows")
+        self.assertTrue(min_no <= row_no <= max_no, "order_by_customer.csv does not have acceptable number of rows")
 
         
 if __name__ == "__main__":
