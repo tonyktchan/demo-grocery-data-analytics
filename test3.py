@@ -1,3 +1,6 @@
+'''
+test3.py is used to generate the subtotal of orders by each customer
+'''
 import pandas as pd
 
 #

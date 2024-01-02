@@ -1,9 +1,10 @@
-import hashlib
+'''
+test2.py will be imported by main.py to generate unique orders by customers
+'''
 import random
 import datetime
-
+import hashlib
 #
-# Task 1:
 # (A) order_gen function is called by main.py 
 #     returning the list of orders sorted first by order_date and second by customer_id
 #
@@ -99,7 +100,6 @@ def order_gen(customer_list, product_list, quantity, products, no_order, no_day)
     return generated_orders
     
 #
-# Task 1:
 # (B) cust_date_gen function is called by order_gen function 
 #     returning the unique combination of customer_id and order_date for each order
 #

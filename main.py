@@ -20,10 +20,13 @@
    If all tests are successful, the generated csv files/dataset are ready to use
 
 '''
-import test1, test2, test3
-import random
 import sys
+import random
 import pandas as pd
+import test1
+import test2
+import test3
+
 
 #
 # (A) Parametrize the Dataset Generation according to the requirements:
@@ -84,7 +87,7 @@ unique_generation = 0
 num_generation = 0
 product_list = []
 
-print(f"Unique product_ids are being generated")
+print("Unique product_ids are being generated")
 
 while unique_generation == 0:
     
@@ -98,7 +101,7 @@ while unique_generation == 0:
         # Exit if LIST_CATEGORY is corrupted
         #
         if type(product_id) == type(None):
-            print(f"No product_id is generated. Please check validity of the LIST_CATEGORY")
+            print("No product_id is generated. Please check validity of the LIST_CATEGORY")
             sys.exit(3)
         else:
             product_list.append(product_id)
@@ -142,7 +145,7 @@ for i in product_list:
     record ={"product_id":i, "product_category":category}
     product_dimension_table.append(record)
 
-print(f"Product Dimesnion table is generated successfully as follows:")    
+print("Product Dimension table is generated successfully as follows:")    
 print(product_dimension_table)
 
 df = pd.DataFrame.from_dict(product_dimension_table)

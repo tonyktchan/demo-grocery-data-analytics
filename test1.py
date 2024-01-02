@@ -1,8 +1,10 @@
+'''
+test1.py has 2 functions to generate random unique customer_ids and product_ids
+'''
 import hashlib
 import random
 
 #
-# Task 1:
 # (A) Additional assumptions:
 # 
 # Requirements on length and format of order_id, customer_id and product_id are not stated.
@@ -18,7 +20,6 @@ import random
 #
 
 #
-# Task 1:
 # (B) customer_id_gen function is called by main.py 
 #     returning a list of customer_id
 #
@@ -38,7 +39,6 @@ def customer_id_gen()-> "customer_id":
 
 
 #
-# Task 1:
 # (C) product_id_gen function is called by main.py 
 #
 #     returning a list of customer_id

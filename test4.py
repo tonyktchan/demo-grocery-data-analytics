@@ -1,6 +1,10 @@
+'''
+test4.py is used independently to perform unit tests on the output csv files
+'''
+import os 
 import unittest
 import pandas as pd
-import os 
+
 
 #
 #
