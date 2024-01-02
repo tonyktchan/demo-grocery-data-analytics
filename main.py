@@ -118,7 +118,6 @@ while unique_generation == 0:
         product_list=[]
         num_generation += 1
 
-
 # check if unique generation of product_id is successful or not
 if unique_generation == 0:
     print("Failed to generate a list of unique product_id")
