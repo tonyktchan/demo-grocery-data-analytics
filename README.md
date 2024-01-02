@@ -25,5 +25,6 @@ Output csv files are:
 To run :
 python -m test4
 
-test4.py consists of several basic unit testing to ensure the csv files exist and have the expected number of records within limits.
+test4.py consists of several basic unit testings to ensure the csv files exist and have the expected number of records within limits.
 
+Enjoy!
