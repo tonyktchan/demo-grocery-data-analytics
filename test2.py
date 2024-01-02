@@ -10,15 +10,15 @@ import hashlib
 #
 
 def order_gen(customer_list, product_list, quantity, products, no_order, no_day)-> "order_dataset":
-
+'''
+ generate customer orders
+'''
     order_dataset = []
     unique_order_list = []
- 
-    """
-    Generate the unique combination of customer_id and order_date
-    
-    """
-    
+
+#
+#    Generate the unique combination of customer_id and order_date
+#    
     customer_ls = customer_list
     product_ls = product_list
     no_day_allowed = no_day
@@ -75,7 +75,6 @@ def order_gen(customer_list, product_list, quantity, products, no_order, no_day)
             purchased_quantity.append(random.randint(1,no_quantity))  
             current_index +=1
         
-
         #
         # Generate full record(s) per order_id
         #             
