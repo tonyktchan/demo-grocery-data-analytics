@@ -6,7 +6,7 @@ import random
 
 #
 # (A) Additional assumptions:
-# 
+#
 # Requirements on length and format of order_id, customer_id and product_id are not stated.
 # These assumptions are used:
 # - order_id (in test2.py) will be an integer from 0 to 999 in increment of 1.
@@ -16,11 +16,11 @@ import random
 #   - c - cooked food
 #   - b - breakfast food
 #   - r - reduced food
-#   - z - Null / None / Others 
+#   - z - Null / None / Others
 #
 
 #
-# (B) customer_id_gen function is called by main.py 
+# (B) customer_id_gen function is called by main.py
 #     returning a list of customer_id
 #
 
@@ -30,7 +30,7 @@ def customer_id_gen()-> "customer_id":
     A random seed is used, can be replaced by the actual customer name
     """
     
-    customer_info = str(random.randint(0, 9999))    
+    customer_info = str(random.randint(0, 9999))   
     raw_customer_id = hashlib.sha256(customer_info.encode()).hexdigest()
     customer_id = raw_customer_id[:12]
     print(f"The generated unique customer id is {customer_id}")

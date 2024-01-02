@@ -20,7 +20,6 @@ def subtotal_gen (history)-> "subtotal_dataset":
     # sort the historical data using customer_id and then by date
     sorted_history = sorted(historical_data, key=lambda x:((x["customer_id"], "%S"), (x["order_date"], "%Y-%m-%d")))
     
-
     df = pd.DataFrame.from_dict(sorted_history)
     df.to_csv("order_by_customer.csv")
 
